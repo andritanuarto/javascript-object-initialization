@@ -36,8 +36,8 @@ apple = {
 	}
 }
 
-apple.showDrive(); //samsung
-apple.showCpu();  //amd
-apple.showRam();  //ssd
+apple.showDrive(); 
+apple.showCpu();  
+apple.showRam(); 
 </code>
 
