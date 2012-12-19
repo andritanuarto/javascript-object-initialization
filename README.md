@@ -19,3 +19,26 @@ to get each property within the computer object, we just simply write
 </br>
 <code>document.write("I want a" + computer.drive + " and " + computer.cpu + " and " + computer.ram);</code>
 
+<h2>Multiple functions in one object</h2>
+
+<code>
+apple={
+  showDrive: function(){
+		alert('samsung');
+	},
+	
+	showCpu: function(){
+		alert('amd');
+	},
+	
+	showRam: function(){
+		alert('ssd');
+	}
+}
+</code>
+<code>
+apple.showDrive(); //samsung
+apple.showCpu();  //amd
+apple.showRam();  //ssd
+</code>
+
