@@ -22,7 +22,7 @@ to get each property within the computer object, we just simply write
 <h2>Multiple functions in one object</h2>
 
 <code>
-apple={
+apple = {
   showDrive: function(){
 		alert('samsung');
 	},
@@ -35,8 +35,7 @@ apple={
 		alert('ssd');
 	}
 }
-</code>
-<code>
+
 apple.showDrive(); //samsung
 apple.showCpu();  //amd
 apple.showRam();  //ssd
