@@ -20,9 +20,9 @@ to get each property within the computer object, we just simply write
 <code>document.write("I want a" + computer.drive + " and " + computer.cpu + " and " + computer.ram);</code>
 
 <h2>Multiple functions in one object</h2>
-
+<pre>
 <code>
-apple = {
+apple = {<br/>
   showDrive: function(){
 		alert('samsung');
 	},
@@ -36,8 +36,8 @@ apple = {
 	}
 }
 
-apple.showDrive(); 
-apple.showCpu();  
-apple.showRam(); 
+apple.showDrive(); <br/>
+apple.showCpu();  <br/>
+apple.showRam(); <br/>
 </code>
-
+</pre>
