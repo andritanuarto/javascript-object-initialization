@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Span to Text Box - Demo - DOM</title>
+<script type="text/javascript">
+window.onload = function (){        
+        textNode = document.getElementById('text');
+        textValue = textNode.firstChild.nodeValue;
+        textboxNode = document.getElementById('textbox');
+        doneButton = document.getElementById('done');
+}
+
+        function change(){
+          textboxNode.setAttribute('value', textValue);
+          textNode.style.display = 'none';
+          textboxNode.setAttribute('type','text');
+          doneButton.setAttribute('type','button');
+        }
+       
+        function changeBack(){
+          textNode.firstChild.nodeValue = textboxNode.value;
+          textNode.style.display = 'block';
+          textboxNode.setAttribute('type', 'hidden');
+          doneButton.setAttribute('type','hidden');
+        }
+
+
+</script>
+ 
+</head>
+ 
+<body>
+<div>
+<p id="text" onClick="change()">Click me!</p>
+<form onSubmit="return false;">
+<input type="hidden" id="textbox" />
+<input type="hidden" id="done" onClick="changeBack()" value="Done" />
+</form>
+</div>
+</body>
+</html>
